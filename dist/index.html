@@ -4,10 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="main.js" defer></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Mulish:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>To-Do List</title>
   </head>
   <body>
-    <div id="content"></div>
+    <div class="container">
+      <div class="sidebar">
+        <div class="logo">
+          <p class="logo-title">
+            <img
+              src="../dist/logos/note_logo.svg"
+              alt="logo"
+              class="logo-img"
+            />To-Do List
+          </p>
+        </div>
+        <div class="sections"><p class="section-title">Home</p></div>
+        <div class="sections"><p class="section-title">Today</p></div>
+        <div class="sections"><p class="section-title">This Week</p></div>
+        <div class="sections"><p class="section-title">Projects</p></div>
+      </div>
+      <div class="header"></div>
+      <div class="main"></div>
+    </div>
 
     <!-- 
     Things to add:
@@ -26,6 +52,8 @@
     -Dates to the notes
     -Complete button
     -Delete note button
+    -Priority color coded
+    -When a note is checked as completed, the note should go to a "completed" section. 
     
     You should separate your application logic (i.e. creating new todos, setting todos as complete, changing todo priority etc.) from the DOM-related stuff, so keep all of those things in separate modules.
 

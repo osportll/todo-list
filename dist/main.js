@@ -1,1 +1,1 @@
-(()=>{"use strict";function t(t,n,o){return{title:t,date:n,status:o,content:function(){console.log(`${this.title} ${this.date} ${this.status}`)}}}t(),t("lala","today","to-do").content()})();
+(()=>{"use strict";function t(t,o,e){return{title:t,date:o,status:e,modifyContent:function(){}}}document.querySelector("#note"),t(),t("lala","today","to-do").modifyContent()})();
