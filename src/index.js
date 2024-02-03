@@ -1,1 +1,4 @@
-console.log('hi');
+import { createNote, newNote } from './createNote';
+
+createNote();
+newNote();
