@@ -43,6 +43,10 @@ p {
   transition: all 0.3s ease-in-out;
 }
 
+.layer-on {
+  background-color: #e2e2e946;
+}
+
 .sections:hover {
   background-color: #e2e2e946;
 }
@@ -60,7 +64,7 @@ p {
 }
 
 .logo-title:hover,
-.section-title {
+.section-title:hover {
   cursor: pointer;
 }
 
