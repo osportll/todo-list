@@ -57,30 +57,53 @@
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa,
             saepe.
           </p>
+          <div class="note-details"><p class="details-text">Details</p></div>
         </div>
         <div class="note">
           <p class="note-text">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa,
             saepe.
           </p>
+          <div class="note-details"><p class="details-text">Details</p></div>
         </div>
-        <div class="note">
-          <p class="note-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa,
-            saepe.
-          </p>
-        </div>
-        <div class="note">
-          <p class="note-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa,
-            saepe.
-          </p>
-        </div>
-        <div class="note">
-          <p class="note-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa,
-            saepe.
-          </p>
+      </div>
+
+      <div class="note-modal">
+        <div class="note-modal-content">
+          <div class="modal-header">
+            <p class="modal-header-text">Create new To-Do</p>
+            <div class="close-button">X</div>
+          </div>
+          <div class="note-title">
+            <!-- <p class="title-text">Title</p> -->
+            <textarea
+              name="title"
+              id="title"
+              cols="30"
+              rows="10"
+              class="title-textarea"
+              placeholder="Title"
+            ></textarea>
+          </div>
+          <div class="note-body">
+            <!-- <p class="body-text">Description</p> -->
+            <textarea
+              name="body"
+              id="body"
+              cols="30"
+              rows="10"
+              class="body-textarea"
+              placeholder="Description"
+            ></textarea>
+          </div>
+          <div class="modal-buttons">
+            <div class="due-date">
+              <p class="due-text">Due date:</p>
+              <input type="date" class="datepicker" name="datepicker" />
+            </div>
+            <div class="priority">Lorem ipsum dolor,</div>
+            <div class="modal-add-note">Add note</div>
+          </div>
         </div>
       </div>
     </div>
