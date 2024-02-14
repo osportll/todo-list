@@ -293,6 +293,11 @@ p {
   padding: 10px;
 }
 
+.close-button:hover {
+  cursor: pointer;
+  color: #ff0040;
+}
+
 .due-date {
   display: flex;
   gap: 10px;
@@ -315,4 +320,26 @@ p {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  width: 123px;
+}
+
+.add-note-btn {
+  background-color: #008fd6;
+  color: #fff;
+  font-weight: 600;
+  margin: 0;
+  border: none;
+  font-family: inherit;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 50px;
+}
+
+.add-note-btn:hover {
+  background-color: #0077b3;
+  cursor: pointer;
+}
+.add-note-btn:active {
+  background-color: #1ea6e0;
 }
