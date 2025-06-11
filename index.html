@@ -59,13 +59,6 @@
           </p>
           <div class="note-details"><p class="details-text">Details</p></div>
         </div>
-        <div class="note">
-          <p class="note-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa,
-            saepe.
-          </p>
-          <div class="note-details"><p class="details-text">Details</p></div>
-        </div>
       </div>
 
       <div class="note-modal">
@@ -101,7 +94,14 @@
               <p class="due-text">Due date:</p>
               <input type="date" class="datepicker" name="datepicker" />
             </div>
-            <div class="priority">Lorem ipsum dolor,</div>
+            <div class="priority">
+              <label class="priority-label" for="priority">Priority:</label>
+              <select class="dropdown" name="priority" id="priority">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="High">High</option>
+              </select>
+            </div>
             <div class="modal-add-note">
               <button class="add-note-btn">Add note</button>
             </div>

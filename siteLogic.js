@@ -7,13 +7,11 @@ export function initSiteLogic() {
 }
 
 export function toggleSection() {
-  sections.forEach((e) => {
-    e.addEventListener('click', () => {
-      sections.forEach((section) => {
-        section.classList.remove('layer-on');
-      });
+  sections.forEach((section) => {
+    section.addEventListener('click', function () {
+      sections.forEach((s) => s.classList.remove('layer-on')); 
+      this.classList.add('layer-on');
 
-      e.classList.add('layer-on');
     });
   });
 }

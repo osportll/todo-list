@@ -192,14 +192,15 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  display: none;
+  backdrop-filter: blur(2px);
+  /* display: none; */
 }
 
 .note-modal-content {
   background-color: #e8ffa8;
   /* padding: 40px; */
   border: none;
-  width: 80%;
+  width: 500px;
   /* max-width: 500px;
   min-width: 500px; */
   max-width: 700px;
@@ -209,6 +210,8 @@ p {
   align-items: center;
   flex-direction: column;
   /* gap: 20px; */
+   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+   
 }
 
 .hide-modal {
@@ -230,7 +233,7 @@ p {
   /* border: 1px rgb(161, 161, 161) solid; */
   border: none;
   background-color: #eeeeee;
-  width: 700px;
+  width: 500px;
   height: 55px;
   font-family: 'Mulish', sans-serif;
   padding: 5px;
@@ -260,19 +263,36 @@ p {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 35px 35px;
-  align-items: center;
-  width: 700px;
+  width: 500px;
   background-color: #eeeeee;
+  align-items: center;
 }
 
 .due-date {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
+  padding-left: 15px;
 }
 
 .priority {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
+  padding-left: 15px;
+}
+
+.priority-label {
+  font-size: 17px;
+}
+
+.dropdown {
+  padding: 2px;
+  font-size: 15px;
+  border: 1px solid #38bdf8;
+  background-color: #eee;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+  color: #38bdf8;
 }
 
 .modal-add-note {
@@ -282,7 +302,7 @@ p {
 }
 
 .modal-header {
-  width: 700px;
+  width: 500px;
   height: 40px;
   background-image: linear-gradient(to right, #38bdf8, #0284c7);
   color: #fff;
@@ -334,7 +354,7 @@ p {
   font-size: 15px;
   padding: 10px;
   border-radius: 5px;
-  margin-left: 50px;
+  
 }
 
 .add-note-btn:hover {
