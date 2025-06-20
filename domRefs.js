@@ -26,4 +26,8 @@ export const DOM = {
   get notePriority() {
     return document.querySelector(".dropdown");
   },
+
+  get noteModal() {
+    return document.querySelector(".note-modal");
+  },
 };

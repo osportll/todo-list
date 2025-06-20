@@ -196,6 +196,10 @@ p {
   /* display: none; */
 }
 
+.hide-modal {
+  display: none;
+}
+
 .note-modal-content {
   background-color: #e8ffa8;
   /* padding: 40px; */

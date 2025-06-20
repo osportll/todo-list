@@ -25,14 +25,19 @@ export class createNote {
 export function initNoteLogic() {
   let noteArray = [];
   DOM.addNoteBtn.addEventListener("click", () => {
-    let title = DOM.noteTitle.value;
-    let body = DOM.noteBody.value;
-    let date = DOM.noteDate.value;
-    let priority = DOM.notePriority.value;
+    if (DOM.noteDate.value !== "") {
+      let title = DOM.noteTitle.value;
+      let body = DOM.noteBody.value;
+      let date = DOM.noteDate.value;
+      let priority = DOM.notePriority.value;
 
-    let newNote = new createNote(title, body, date, priority);
+      let newNote = new createNote(title, body, date, priority);
 
-    noteArray.push(newNote);
-    console.log(noteArray);
+      noteArray.push(newNote);
+      console.log(noteArray);
+      DOM.noteModal.classList.toggle("hide-modal");
+    } else {
+      alert("Must enter a valid date!");
+    }
   });
 }
