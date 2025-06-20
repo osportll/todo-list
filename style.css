@@ -193,11 +193,11 @@ p {
   align-items: center;
   justify-content: center;
   backdrop-filter: blur(2px);
-  /* display: none; */
+  display: none;
 }
 
-.hide-modal {
-  display: none;
+.show-modal {
+  display: flex;
 }
 
 .note-modal-content {

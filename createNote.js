@@ -9,22 +9,13 @@ export class createNote {
     this.body = body;
     this.priority = priority;
   }
-
-  /* submitInfo() {
-    DOM.addNoteBtn.addEventListener("click", () => {
-      title = DOM.noteTitle.value;
-      body = DOM.noteBody.value;
-
-      console.log(title, body);
-    });
-  } */
 }
 
 //Create the specific object
 
 export function initNoteLogic() {
   let noteArray = [];
-  DOM.addNoteBtn.addEventListener("click", () => {
+  DOM.submitNoteBtn.addEventListener("click", () => {
     if (DOM.noteDate.value !== "") {
       let title = DOM.noteTitle.value;
       let body = DOM.noteBody.value;
@@ -35,9 +26,18 @@ export function initNoteLogic() {
 
       noteArray.push(newNote);
       console.log(noteArray);
-      DOM.noteModal.classList.toggle("hide-modal");
+      DOM.noteModal.classList.toggle("show-modal");
     } else {
       alert("Must enter a valid date!");
     }
+  });
+}
+
+export function addNewNoteLogic() {
+  DOM.addNoteBtn.addEventListener("click", () => {
+    DOM.noteModal.classList.toggle("show-modal");
+    DOM.noteTitle.value = "";
+    DOM.noteBody.value = "";
+    DOM.noteDate.value = "";
   });
 }

@@ -7,7 +7,7 @@ export const DOM = {
     return document.querySelector(".header-title");
   },
 
-  get addNoteBtn() {
+  get submitNoteBtn() {
     return document.querySelector(".add-note-btn");
   },
 
@@ -29,5 +29,9 @@ export const DOM = {
 
   get noteModal() {
     return document.querySelector(".note-modal");
+  },
+
+  get addNoteBtn() {
+    return document.querySelector(".add-note");
   },
 };
