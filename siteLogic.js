@@ -1,10 +1,5 @@
 import { DOM } from "./domRefs.js";
 
-/* export function initSiteLogic() {
-  sections = document.querySelectorAll(".sections");
-  headerTitle = document.querySelector(".header-title");
-} */
-
 export function toggleSection() {
   DOM.sections.forEach((section) => {
     section.addEventListener("click", function () {

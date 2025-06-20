@@ -12,6 +12,18 @@ export const DOM = {
   },
 
   get noteTitle() {
-    return document.querySelector("#title");
+    return document.querySelector(".title-textarea");
+  },
+
+  get noteBody() {
+    return document.querySelector(".body-textarea");
+  },
+
+  get noteDate() {
+    return document.querySelector(".datepicker");
+  },
+
+  get notePriority() {
+    return document.querySelector(".dropdown");
   },
 };
