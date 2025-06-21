@@ -26,16 +26,20 @@ export function initNoteLogic() {
 
       noteArray.push(newNote);
       console.log(noteArray);
-      DOM.noteModal.classList.toggle("show-modal");
+      DOM.toggleModal;
+
+      DOM.createNoteChild;
     } else {
       alert("Must enter a valid date!");
     }
   });
 }
 
+//New note butTon logic
+
 export function addNewNoteLogic() {
   DOM.addNoteBtn.addEventListener("click", () => {
-    DOM.noteModal.classList.toggle("show-modal");
+    DOM.toggleModal;
     DOM.noteTitle.value = "";
     DOM.noteBody.value = "";
     DOM.noteDate.value = "";
