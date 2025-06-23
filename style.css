@@ -183,6 +183,21 @@ p {
   background-color: #c0c0c0;
 }
 
+.details-btn {
+  all: unset;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  cursor: pointer;
+}
+
 .note-modal {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.4);

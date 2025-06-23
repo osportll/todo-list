@@ -39,8 +39,13 @@ export const DOM = {
     return this.noteModal.classList.toggle("show-modal");
   },
 
+  get main() {
+    return document.querySelector(".main");
+  },
+
   get createNoteChild() {
-    let main = document.querySelector(".main");
+    /* let main = document.querySelector(".main");
+    let noteText = document.querySelector(".note-text"); */
 
     let node = document.createElement("div");
     let node2 = document.createElement("div");
@@ -50,12 +55,16 @@ export const DOM = {
     node.classList.add("note");
     text.classList.add("note-text");
     node2.classList.add("note-details");
-    btn.classList.add("details-text");
+    btn.classList.add("details-btn");
 
     node.appendChild(text);
     node.appendChild(node2);
     node2.appendChild(btn);
 
-    return main.appendChild(node);
+    btn.textContent = "Details";
+
+    text.textContent = this.noteTitle.value;
+
+    return this.main.appendChild(node);
   },
 };

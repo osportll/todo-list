@@ -26,6 +26,7 @@ export function initNoteLogic() {
 
       noteArray.push(newNote);
       console.log(noteArray);
+
       DOM.toggleModal;
 
       DOM.createNoteChild;
