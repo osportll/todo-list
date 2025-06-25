@@ -121,15 +121,25 @@ p {
   align-items: center;
 }
 
+p {
+  word-wrap: break-word; /* ensures long words wrap */
+  white-space: normal; /* allows text to wrap */
+  overflow-wrap: break-word;
+  position: static; /* important if it was absolutely positioned */
+}
+
 .main {
   background-color: #fafafa;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
-  min-height: auto;
   display: grid;
   grid-template-columns: minmax(500px, 1fr);
-  grid-auto-rows: 50px;
-  row-gap: 15px;
+  grid-auto-rows: minmax(
+    65px,
+    auto
+  ); /*Tells the rows to be minimum 65px 
+  tall and grow depending on the content. It will grow responsively depending how much text is in it*/
+  row-gap: 25px;
   padding: 30px 40px;
 }
 
@@ -144,7 +154,7 @@ p {
 
 .note {
   background-color: #eee;
-  padding: 20px;
+  padding: 10px;
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   display: flex;
   align-items: center;

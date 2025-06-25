@@ -1,4 +1,8 @@
 export const DOM = {
+  get main() {
+    return document.querySelector(".main");
+  },
+
   get sections() {
     return document.querySelectorAll(".sections");
   },
@@ -41,6 +45,10 @@ export const DOM = {
 
   get main() {
     return document.querySelector(".main");
+  },
+
+  get details() {
+    return document.querySelector(".details-btn");
   },
 
   get createNoteChild() {

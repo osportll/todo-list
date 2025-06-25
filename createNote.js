@@ -46,3 +46,11 @@ export function addNewNoteLogic() {
     DOM.noteDate.value = "";
   });
 }
+
+export function seeNoteDetails() {
+  DOM.main.addEventListener("click", (event) => {
+    if (event.target.matches(".details-btn")) {
+      console.log(event.target);
+    }
+  });
+}
