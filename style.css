@@ -121,26 +121,20 @@ p {
   align-items: center;
 }
 
-p {
-  word-wrap: break-word; /* ensures long words wrap */
-  white-space: normal; /* allows text to wrap */
-  overflow-wrap: break-word;
-  position: static; /* important if it was absolutely positioned */
-}
-
 .main {
   background-color: #fafafa;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   display: grid;
-  grid-template-columns: minmax(500px, 1fr);
+  grid-template-columns: minmax(500px, auto);
   grid-auto-rows: minmax(
     65px,
     auto
   ); /*Tells the rows to be minimum 65px 
   tall and grow depending on the content. It will grow responsively depending how much text is in it*/
   row-gap: 25px;
-  padding: 30px 40px;
+  padding: 50px 50px 50px 30px;
+  align-content: start;
 }
 
 .header-title {
@@ -167,10 +161,10 @@ p {
   box-shadow: -2px 2px 6px 0px #a1a1aa;
 }
 
-/* .note:active {
+.note:active {
   transform: translate(0px, 0px);
   box-shadow: none;
-} */
+}
 
 .note-text {
   font-weight: lighter;
